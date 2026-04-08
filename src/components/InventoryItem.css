@@ -1,0 +1,94 @@
+.inventory-slot {
+  background: rgba(20, 25, 40, 0.8);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(210, 180, 140, 0.5);
+  border-radius: 16px;
+  padding: 16px 8px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.inventory-slot:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border-color: #ffd966;
+}
+
+.item-icon {
+  width: 110px;   /* было 64px */
+  height: 110px;  /* было 64px */
+  object-fit: contain;
+  margin-bottom: 12px; /* чуть больше отступ снизу */
+  filter: drop-shadow(0 2px 4px black);
+}
+
+.item-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: #1e2a3a;
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.item-tooltip {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e2a3a;  /* сплошной тёмный фон */
+  border: 1px solid gold;
+  border-radius: 16px;
+  padding: 12px 16px;
+  width: 280px;
+  max-width: 90vw;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  z-index: 10000;
+  white-space: normal;
+  word-wrap: break-word;
+  pointer-events: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-align: center;
+  color: #f0ede8;
+}
+
+.item-tooltip-top {
+  bottom: 100%;
+  margin-bottom: 10px;
+}
+
+.item-tooltip-bottom {
+  top: 100%;
+  margin-top: 10px;
+}
+
+.item-name {
+  font-size: 1rem;
+  background: #1e2a3a;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.inventory-slot {
+  min-width: 150px;
+}
+
+.inventory-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-icon {
+  margin-bottom: 8px;
+}
+
+.item-name {
+  text-align: center;
+}

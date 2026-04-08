@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные стили body — без фона, только шрифт */
+body {
+  font-family: 'VT323', 'Courier New', monospace;
+  font-size: 18px;
+  color: #f0ede8;
+  min-height: 100vh;
+}
+
+/* Контейнер приложения */
+.app {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Полноэкранный слой для фона (гифки и градиент по умолчанию) */
+.bg-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease;
+}
+
+.bg-layer.default {
+  background: radial-gradient(circle at 20% 30%, #0a0f1e, #03050a);
+}
+
+.bg-layer.firstotk {
+  background-image: url('/icons/firstotk.gif');
+}
+
+.bg-layer.secondotk {
+  background-image: url('/icons/secondotk.gif');
+}
+
+/* Импорт пиксельного шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+/* Глобальные пиксельные классы */
+.pixel-text {
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  letter-spacing: 1px;
+}
+
+.pixel-text-body {
+  font-family: 'VT323', 'Courier New', monospace;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Заголовки, кнопки, важные элементы */
+h1, h2, h3, button, .chest p, .dialog-speaker, .dialog-next-pixel, .proposal-header, .accept-btn, .decline-btn {
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  letter-spacing: 1px;
+}
+
+/* Обычный текст в тултипах и диалогах */
+.item-tooltip, .dialog-text, .sad-text {
+  font-family: 'VT323', 'Courier New', monospace;
+  font-size: 1rem;
+}
+
+/* Контейнер для колонок инвентаря */
+.columns-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Контейнер объединённого инвентаря */
+.merged-container {
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  border-radius: 32px;
+  padding: 3rem;
+  border: 2px solid gold;
+}

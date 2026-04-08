@@ -1,0 +1,130 @@
+.proposal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1500;
+  font-family: 'VT323', monospace;
+}
+
+.proposal-card {
+  background: linear-gradient(145deg, #1a1f2e, #0f1320);
+  border: 4px solid #ffd966;
+  border-radius: 32px;
+  padding: 2rem;
+  max-width: 700px;   /* было 550px — увеличили */
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  animation: fadeInUp 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.proposal-header {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.2rem;
+  color: #ffd966;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.proposal-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #ffd966;
+  margin: 0.5rem auto;
+  background: #2a2f40;
+}
+
+.proposal-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1.5rem 0;
+  color: #f0ede8;
+  text-align: left;
+  background: rgba(0,0,0,0.4);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.proposal-text p {
+  margin: 0.8rem 0;
+}
+
+.proposal-question {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #ffaa66;
+  margin-top: 1.2rem;
+}
+
+.proposal-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.accept-btn, .decline-btn {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.accept-btn {
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.95rem; 
+  padding: 12px 20px; 
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.accept-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+
+.decline-btn {
+  background: linear-gradient(135deg, #8b0000, #5c0000);
+  color: white;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.95rem;  
+  padding: 12px 20px;  
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.decline-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
