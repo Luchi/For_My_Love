@@ -92,3 +92,30 @@
 .item-name {
   text-align: center;
 }
+
+
+.item-tooltip-bottom {
+  /* Убедимся, что тултип не перекрывается другими элементами */
+  z-index: 99999;
+  /* При необходимости можно добавить небольшую тень */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.item-tooltip-top {
+  z-index: 99999;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
+}
+
+/* Если тултип всё равно перекрывается, можно добавить этому элементу высокий z-index при наведении */
+.inventory-slot:hover {
+  z-index: 100000;
+}
+/* Фикс для кастомных предметов: чтобы они были такого же размера, как обычные */
+.custom-item-wrapper {
+  display: contents;
+}
+
+.custom-item-wrapper .inventory-slot {
+  min-width: 150px;
+  width: 100%;
+}

@@ -8,17 +8,17 @@ import './App.css';
 
 const hisItems = [
   {
-    icon: '/icons/Vityas_PC.png',
+    icon: 'icons/Vityas_PC.png',
     name: 'ПК Вити',
     description: 'Боевая станция. Запускает любую игру.'
   },
   {
-    icon: '/icons/guitar.png',
+    icon: 'icons/guitar.png',
     name: 'Гитара',
     description: 'Струны настроения. Играет, когда скучаешь.'
   },
   {
-    icon: '/icons/Vmonstr.png',
+    icon: 'icons/Vmonstr.png',
     name: 'Монстр',
     description: 'Вкусный заряд энергии.'
   }
@@ -26,17 +26,17 @@ const hisItems = [
 
 const herItems = [
   {
-    icon: '/icons/Vityas_PC.png',
+    icon: 'icons/Vityas_PC.png',
     name: 'ПК Лучи',
     description: 'Боевая станция. Запускает любую игру.'
   },
   {
-    icon: '/icons/Lcat.png',
+    icon: 'icons/Lcat.png',
     name: 'Котя',
     description: 'Милый спутник жизни.'
   },
   {
-    icon: '/icons/Lmonstr.png',
+    icon: 'icons/Lmonstr.png',
     name: 'Монстр',
     description: 'Вкусный заряд энергии.'
   }
@@ -91,5 +91,14 @@ function App() {
     </div>
   );
 }
+// Предзагрузка гифок для фона
+const preloadImages = () => {
+  const images = ['icons/firstotk.gif', 'icons/secondotk.gif'];
+  images.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+};
+preloadImages();
 
 export default App;

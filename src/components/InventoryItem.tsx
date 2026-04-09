@@ -20,10 +20,15 @@ export const InventoryItem = ({ icon, name, description }: InventoryItemProps) =
       const spaceAbove = slotRect.top;
       const spaceBelow = window.innerHeight - slotRect.bottom;
       
-      // Если сверху мало места, а снизу достаточно — показываем снизу
-      if (spaceAbove < tooltipRect.height + 10 && spaceBelow > tooltipRect.height + 10) {
+      const enoughSpaceAbove = spaceAbove >= tooltipRect.height + 15;
+      const enoughSpaceBelow = spaceBelow >= tooltipRect.height + 15;
+      
+      if (enoughSpaceAbove) {
+        setTooltipPosition('top');
+      } else if (enoughSpaceBelow) {
         setTooltipPosition('bottom');
       } else {
+        // Если нет места нигде, показываем сверху, но уменьшаем высоту
         setTooltipPosition('top');
       }
     }

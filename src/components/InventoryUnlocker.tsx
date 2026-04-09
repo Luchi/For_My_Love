@@ -38,14 +38,14 @@ export const InventoryUnlocker = ({ hisItems, herItems, onBothViewed }: Inventor
   <div className="chests">
     <div className={`chest ${hisViewed ? 'viewed' : ''}`} onClick={openHis}>
       <div className="chest-icon">
-        <img src="/icons/bag.png" alt="сундук" />
+        <img src="icons/bag.png" alt="сундук" />
       </div>
       <p>Инвентарь Вити</p>
       {hisViewed && <span className="check">✓ Просмотрен</span>}
     </div>
     <div className={`chest ${herViewed ? 'viewed' : ''}`} onClick={openHer}>
       <div className="chest-icon">
-        <img src="/icons/bag.png" alt="сундук" />
+        <img src="icons/bag.png" alt="сундук" />
       </div>
       <p>Инвентарь Luchi</p>
       {herViewed && <span className="check">✓ Просмотрен</span>}

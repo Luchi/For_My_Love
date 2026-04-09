@@ -80,7 +80,7 @@ export const Proposal = ({ onAccept, visible, onChangeBackground }: ProposalProp
       <div className="proposal-card">
         <div className="proposal-header">🎮 Поступило предложение от Luchi! 🎮</div>
         <div className="proposal-avatar">
-          <img src="/icons/luchi-avatar.png" alt="Luchi" />
+          <img src="icons/luchi-avatar.png" alt="Luchi" />
         </div>
         <div className="proposal-text">{getMessage()}</div>
         <div className="proposal-buttons">{getButtons()}</div>

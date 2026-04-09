@@ -1,146 +1,146 @@
 export const secretItems = [
   {
-    icon: '/icons/console.png',
+    icon: 'icons/console.png',
     name: 'Секретное сообщение в консоли',
     description: 'Нажми Ctrl+Shift+I, прочитай признание. Эффект: +1 к секретности, +10 к улыбке.'
   },
   {
-    icon: '/icons/qr.png',
+    icon: 'icons/qr.png',
     name: 'QR-код Озона',
     description: 'Пришел подарок на ближайший к тебе ПВЗ Озона, забери вместе с Антоном, я ему уже писала, он согласился.'
   },
   {
-    icon: '/icons/osh.png',
+    icon: 'icons/osh.png',
     name: 'Ошейник',
     description: 'Показывает принадлежность к общему инвентарю. Эффект: +5 к покорности.'
   },
   {
-    icon: '/icons/conv.png',
+    icon: 'icons/conv.png',
     name: 'Преобразователь «Дотер → Лолер»',
     description: 'Превращает мужлана дотера в милого послушного лолера. Эффект: +99 к конвертации мировоззрения.'
   },
   {
-    icon: '/icons/key.png',
+    icon: 'icons/key.png',
     name: 'Ключ к совместному будущему',
     description: 'Открывает дверь в «завтра». Эффект: разблокирует новые уровни отношений.'
   },
   {
-    icon: '/icons/scr.png',
+    icon: 'icons/scr.png',
     name: 'Любовная защита',
     description: '«Я всегда рядом и на твоей стороне». Эффект: +40 к доверию, +10 к уюту.'
   },
   {
-    icon: '/icons/robot.jpg',
+    icon: 'icons/robot.jpg',
     name: 'Робот Biped',
     description: 'Работали в паре и почти ни разу не убили друг друга. Эффект: +50 к командной работе.'
   },
   {
-    icon: '/icons/heart.png',
+    icon: 'icons/heart.png',
     name: 'Общее сердце взаимных чувств',
     description: 'Бьётся в унисон. Эффект: +50 к любви, +30 к синхронности.'
   },
   {
-    icon: '/icons/spr.png',
+    icon: 'icons/spr.png',
     name: 'Медицинский шприц «Исцеление ссор»',
     description: 'Восстанавливает 100 HP отношений.'
   },
   {
-    icon: '/icons/npmlov.png',
+    icon: 'icons/npmlov.png',
     name: 'Команда «Установить любовь»',
     description: 'Устанавливает зависимость на всю жизнь.'
   },
   {
-    icon: '/icons/sait.png',
+    icon: 'icons/sait.png',
     name: 'Код любви',
     description: 'Сайт сделан с нуля специально для тебя. Эффект: +100 к усилиям, +50 к искренности.'
   },
   {
-    icon: '/icons/hug.png',
+    icon: 'icons/hug.png',
     name: 'Заявка на обнимашки',
     description: 'Приоритет: высший. Эффект: обрабатывается мгновенно.'
   },
   {
-    icon: '/icons/lic.png',
+    icon: 'icons/lic.png',
     name: 'Свободная лицензия на любовь',
     description: 'Пользуйся без ограничений. Эффект: безлимит на нежности.'
   },
   {
-    icon: '/icons/cert.png',
+    icon: 'icons/cert.png',
     name: 'Сертификат на встречу',
     description: 'Погасим, когда увидимся. Эффект: обменивается на реальную встречу.'
   },
   {
-    icon: '/icons/kub.png',
+    icon: 'icons/kub.png',
     name: 'Кубок «За терпение»',
     description: 'За терпение ко мне. Эффект: +100 к выдержке, +20 к самоиронии.'
   },
   {
-    icon: '/icons/clov.png',
+    icon: 'icons/clov.png',
     name: 'Талисман удачи',
     description: 'Повезло встретиться. Эффект: +15 к удаче при совместной игре.'
   },
   {
-    icon: '/icons/shield.png',
+    icon: 'icons/shield.png',
     name: 'Щит «Блокировка одиночества»',
     description: 'Активен, пока мы рядом. Эффект: защита от грусти на 100%.'
   },
   {
-    icon: '/icons/crystal.png',
+    icon: 'icons/crystal.png',
     name: 'Кристалл «Искра»',
     description: 'Зажигается, когда мы онлайн. Эффект: +20 к желанию жить.'
   },
   {
-    icon: '/icons/coin.png',
+    icon: 'icons/coin.png',
     name: 'Осколок «Взаимный фарм»',
     description: 'Делим золото и чувства поровну. Эффект: +15 к совместному луту.'
   },
   {
-    icon: '/icons/book.png',
+    icon: 'icons/book.png',
     name: 'Книга заклинаний «Поддержка»',
     description: 'Лечит, баффает, воскрешает. Эффект: +50 к исцелению и +20 к командному духу.'
   },
   {
-    icon: '/icons/blan.png',
+    icon: 'icons/blan.png',
     name: 'Плед «Тепло переписки»',
     description: 'Укрывает, когда грустно. Эффект: +20 к комфорту.'
   },
   {
-  icon: '/icons/can.png',
+  icon: 'icons/can.png',
   name: 'Свеча «Аромат вечеринки»',
   description: 'Создаёт уют и тёплую атмосферу, даже когда мы по ту сторону экрана. Эффект: +15 к атмосфере.'
   },
   {
-    icon: '/icons/note.png',
+    icon: 'icons/note.png',
     name: 'Нота',
     description: 'Музыка, написанная тобой для меня. Эффект: +20 к вдохновению.'
   },
   {
-    icon: '/icons/diary.png',
+    icon: 'icons/diary.png',
     name: 'Дневник воспоминаний',
     description: 'Запись каждого момента. Эффект: +10 к сохранению истории.'
   },
   {
-    icon: '/icons/uplove.png',
+    icon: 'icons/uplove.png',
     name: 'Упакованная любовь',
     description: 'Всё нужное внутри, запускается одной командой. Эффект: переносимость чувств на любую платформу.'
   },
   {
-    icon: '/icons/conf.png',
+    icon: 'icons/conf.png',
     name: 'Конфиг счастья по умолчанию',
     description: 'Взаимность = true.'
   },
   {
-    icon: '/icons/wish.png',
+    icon: 'icons/wish.png',
     name: 'Карта желаний',
     description: 'Пункт 1: обнять. Пункт 2: поцеловать. Пункт 3: смотреть вместе на закат и рассвет. Эффект: все желания должны быть выполнены.'
   },
   {
-    icon: '/icons/chest.png',
+    icon: 'icons/chest.png',
     name: 'Общий сундук',
     description: 'Собираем моменты, а не деньги. Эффект: копит счастье.'
   },
   {
-    icon: '/icons/rings.png',
+    icon: 'icons/rings.png',
     name: 'Обручальные кольца',
     description: 'Символ нашего союза. Эффект: +50 к прочности отношений, разблокирует совместные достижения.'
   }

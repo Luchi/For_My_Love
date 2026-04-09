@@ -44,16 +44,16 @@ export const AvatarDialog = ({ onDialogComplete }: AvatarDialogProps) => {
       <div className="moon"></div>
       <div className="ground"></div>
       <div className="campfire">
-        <img src="/icons/campfire.gif" alt="Campfire" className="campfire-gif" />
+        <img src="icons/campfire.gif" alt="Campfire" className="campfire-gif" />
       </div>
       <div className="pixel-avatars">
   <div className="pixel-avatar friend">
     <span>Витенька</span>
-    <img src="/icons/friend-avatar.png" alt="Витя" />
+    <img src="icons/friend-avatar.png" alt="Витя" />
   </div>
   <div className="pixel-avatar luchi">
     <span>Luchi</span>
-    <img src="/icons/luchi-avatar.png" alt="Luchi" />
+    <img src="icons/luchi-avatar.png" alt="Luchi" />
   </div>
 </div>
       <div className="pixel-dialog-box">

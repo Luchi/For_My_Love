@@ -56,7 +56,7 @@ const transformHerItems = () => {
     if (item.name === 'Котя') {
       return [
         {
-          icon: '/icons/Ocat.png',
+          icon: 'icons/Ocat.png',
           name: 'Наши коти',
           description: 'Мурчат, когда мы рядом. Эффект: +30 к теплу в сердце.'
         },
